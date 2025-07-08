@@ -1,4 +1,10 @@
 const grid = document.querySelector('#grid');
+const btnSize = document.querySelector('#btn-size');
+
+btnSize.addEventListener('click', () => {
+    
+});
+
 let gridSize = 480;
 let gridDimensions = 16;
 
