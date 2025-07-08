@@ -1,5 +1,32 @@
+body {
+    background: #F33;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#grid {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    background-color: white;
+    border: 1px dotted pink;
 }
