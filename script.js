@@ -10,6 +10,9 @@ function createCell () {
     const cell = document.createElement('div');
     cell.style.width = `${calcCellSize()}px`;
     cell.style.height = `${calcCellSize()}px`;
+    cell.addEventListener('mouseenter', () => {
+        cell.style.backgroundColor = '#666';
+    });
     cell.classList.add('cell');
     grid.append(cell);
 }
