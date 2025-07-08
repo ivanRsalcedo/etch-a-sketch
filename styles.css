@@ -1,22 +1,25 @@
-body {
-    background: #F33;
-    color: white;
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-
-}
-
 * {
+    font-family: cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: #F33;
+}
+
 h1 {
+    color: gold;
     font-size: 50px;
     margin-top: 50px;
     text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #grid {
@@ -29,4 +32,21 @@ h1 {
 .cell {
     background-color: white;
     border: 1px dotted pink;
+}
+
+#btn-size {
+    margin-top: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+}
+
+#btn-size:hover {
+    filter: brightness(105%)
+}
+
+#btn-size:active {
+    scale: 90%;
 }
