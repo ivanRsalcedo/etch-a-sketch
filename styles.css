@@ -35,12 +35,17 @@ h1 {
 }
 
 #btn-size {
+    font-family: system-ui, sans-serif;
+}
+
+#btn-size {
+    color: gray;
     margin-top: 25px;
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     border: none;
-    font-size: 18px;
+    font-size: 45px;
 }
 
 #btn-size:hover {
