@@ -5,18 +5,19 @@ const grid = document.querySelector('#grid');
 const btnSize = document.querySelector('#btn-size');
 
 btnSize.addEventListener('click', () => {
-    gridDimensions = prompt('Number of squares per side:', 16);
-    clearGrid();
-    generateGrid();
+    let input = prompt('Enter the number of squares per side:\n (min: 2) (max: 100)', 16);
+    if (input >= 2 && input <= 100 && !isNaN(input)){
+        gridDimensions = input;
+        generateGrid();
+    }
+    else
+        alert('Invalid entry');
 });
 
 generateGrid();
 
-function clearGrid(){
-    grid.innerHTML = '';
-}
-
 function generateGrid() {
+    grid.innerHTML = '';
     for (let i = 0; i < gridDimensions * gridDimensions; i++) {
         const cell = document.createElement('div');
         cell.style.width = `${calcCellSize()}px`;
